@@ -1,4 +1,4 @@
-//2025-BoogieTheUnit - "Boogie's Garage and Logistics" Garage System based on Elan-Life Garage
+//2025-BoogieTheUnit - "Boogie's Garage and Logistics" 
 
 class BGL_ComponentClass: ScriptComponentClass {}
 class BGL_Component : ScriptComponent
@@ -380,7 +380,7 @@ class BGL_Component : ScriptComponent
 
         return m_FoundEntity;
     }
-//Don't be a dingus script theif - Love Boogie	
+
 	private bool AddEntityForLoad(IEntity entity)
     {
         if (entity && entity.IsInherited(BaseVehicle) && entity.GetPrefabData().GetPrefabName())
@@ -395,3 +395,4 @@ class BGL_Component : ScriptComponent
 modded enum ChimeraMenuPreset {
     BGLMenu
 }
+
