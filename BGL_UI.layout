@@ -1,0 +1,323 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  OverlayWidgetClass "{664402C40BD36BDD}" {
+   Name "GarageMenu"
+   Slot FrameWidgetSlot "{65DCBA4500000002}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -400
+    OffsetLeft -400
+    PositionY -300
+    OffsetTop -300
+    SizeX 800
+    OffsetRight -400
+    SizeY 568
+    OffsetBottom -268
+   }
+   {
+    BlurWidgetClass "{664402C40BD36BDC}" {
+     Name "Background"
+     Slot OverlayWidgetSlot "{65DCBA4500000004}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     Color 0.392 0.384 0.388 1
+     Intensity 1
+     "Tint Blend Mode" Add
+    }
+    SizeLayoutWidgetClass "{664402C40BD36BDB}" {
+     Name "SizeBase"
+     Slot OverlayWidgetSlot "{65DCBA4500000006}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      VerticalLayoutWidgetClass "{664402C40BD36BDA}" {
+       Name "VerticalMain"
+       Slot AlignableSlot "{65DCBA4500000008}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       {
+        SizeLayoutWidgetClass "{664402C40BD31AC8}" {
+         Name "Header"
+         Slot LayoutSlot "{65DCBA450000000A}" {
+          VerticalAlign 1
+         }
+         {
+          OverlayWidgetClass "{664402C40BD31ACA}" {
+           Name "HeaderOverlay"
+           Slot AlignableSlot "{65DCBA450000000C}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+           }
+           {
+            HorizontalLayoutWidgetClass "{664402C40BD0C9A9}" {
+             Name "HeaderLayout"
+             Slot OverlayWidgetSlot "{65DCBA450000000E}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+              Padding 5 5 5 5
+             }
+             "Z Order" 1
+             {
+              TextWidgetClass "{664402C40BD0C9B6}" {
+               Name "Heading"
+               Slot LayoutSlot "{65DCBA4500000012}" {
+                VerticalAlign 1
+                Padding 0 0 0 0
+               }
+               Text "Your Garage"
+               "Font Size" 36
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        ImageWidgetClass "{664402C40BD0C9B7}" : "{199E5807E8619522}UI/layouts/WidgetLibrary/WLib_Separator.layout" {
+         Name "Separator0"
+         Slot LayoutSlot "{65DCBA4500000016}" {
+          Padding 0 0 0 8
+         }
+         Color 0 0.0715 0.0059 1
+        }
+        OverlayWidgetClass "{664402C40BD0A548}" {
+         Name "ContentOverlayMain"
+         Slot LayoutSlot "{65DCBA4500000018}" {
+          SizeMode Fill
+         }
+         {
+          HorizontalLayoutWidgetClass "{664402C40BD0A54B}" {
+           Name "ContentLayout"
+           Slot OverlayWidgetSlot "{6601ABCD00000002}" {
+            HorizontalAlign 3
+            VerticalAlign 3
+            Padding 10 10 10 10
+           }
+           {
+            VerticalLayoutWidgetClass "{664402C40BD0B197}" {
+             Name "VehicleListPanel"
+             Slot LayoutSlot "{6601ABCD00000004}" {
+              SizeMode Fill
+              FillWeight 0.4
+             }
+             {
+              OverlayWidgetClass "{664402C40BD0B196}" {
+               Name "VehicleListOverlay"
+               Slot LayoutSlot "{6601ABCD00000006}" {
+                SizeMode Fill
+               }
+               {
+                BlurWidgetClass "{664402C40BD064BF}" {
+                 Name "VehicleListBlur"
+                 Slot OverlayWidgetSlot "{6601ABCD00000008}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                 }
+                 Color 0.333 0.333 0.333 1
+                 Intensity 0.7
+                }
+                VerticalLayoutWidgetClass "{664402C40BD01808}" {
+                 Name "VehicleListVerticalLayout"
+                 Slot OverlayWidgetSlot "{6601ABCD0000000A}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                  Padding 10 10 10 10
+                 }
+                 {
+                  TextWidgetClass "{664402C40BD0180F}" {
+                   Name "VehicleListLabel"
+                   Slot LayoutSlot "{6601ABCD0000000C}" {
+                    Padding 0 0 0 10
+                   }
+                   Text "Vehicle List"
+                   "Font Size" 24
+                  }
+                  OverlayWidgetClass "{664402C40BD01DA1}" : "{94CAAE4A601195D3}UI/layouts/ListBox/ListBox.layout" {
+                   Name "ListBoxVehicle"
+                   Slot LayoutSlot "{6601ABCD0000000E}" {
+                    SizeMode Fill
+                   }
+                   {
+                    ImageWidgetClass "{5DB6D18100D38307}" {
+                     Prefab "{5DB6D18100D38307}"
+                     "Is Visible" 0
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+            VerticalLayoutWidgetClass "{664402C40BD01DA3}" {
+             Name "VehiclePreviewPanel"
+             Slot LayoutSlot "{6601ABCD00000015}" {
+              SizeMode Fill
+              FillWeight 0.6
+             }
+             {
+              OverlayWidgetClass "{664402C40BD18FAF}" {
+               Name "VehiclePreviewOverlay"
+               Slot LayoutSlot "{6601ABCD00000017}" {
+                SizeMode Fill
+               }
+               {
+                BlurWidgetClass "{664402C40BD18FAE}" {
+                 Name "VehiclePreviewBlur"
+                 Slot OverlayWidgetSlot "{6601ABCD00000019}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                 }
+                 Color 0.333 0.333 0.333 1
+                 Intensity 0.5
+                }
+                VerticalLayoutWidgetClass "{664402C40BD165E6}" {
+                 Name "VehiclePreviewVerticalLayout"
+                 Slot OverlayWidgetSlot "{6601ABCD0000001B}" {
+                  HorizontalAlign 3
+                  VerticalAlign 3
+                  Padding 10 10 10 10
+                 }
+                 {
+                  TextWidgetClass "{664402C40BD165E9}" {
+                   Name "VehiclePreviewLabel"
+                   Slot LayoutSlot "{6601ABCD0000001D}" {
+                    Padding 0 0 0 10
+                   }
+                   Text "Preview"
+                   "Font Size" 24
+                   "Min Font Size" 24
+                  }
+                  ItemPreviewWidgetClass "{664402C40BD156B9}" {
+                   Name "ItemPreview0"
+                   Slot LayoutSlot "{65EE856A48317311}" {
+                    SizeMode Fill
+                   }
+                  }
+                  VerticalLayoutWidgetClass "{664402C40BD11A47}" {
+                   Name "VehicleDetailsLayout"
+                   Slot LayoutSlot "{6601ABCD00000021}" {
+                   }
+                   {
+                    TextWidgetClass "{664402C40BD11A46}" {
+                     Name "VehicleNameText"
+                     Slot LayoutSlot "{6601ABCD00000023}" {
+                     }
+                     Text "Vehicle Name"
+                     "Font Size" 20
+                    }
+                    HorizontalLayoutWidgetClass "{664402C40BD68E9C}" {
+                     Name "VehicleActionButtonsLayout"
+                     Slot LayoutSlot "{6601ABCD00000027}" {
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        ImageWidgetClass "{664402C40BD68E9F}" : "{199E5807E8619522}UI/layouts/WidgetLibrary/WLib_Separator.layout" {
+         Name "Separator1"
+         Slot LayoutSlot "{65DCBA4500000046}" {
+          Padding 0 8 0 8
+         }
+         Color 0 0.0519 0.0049 1
+        }
+        SizeLayoutWidgetClass "{664402C40BD63FEA}" {
+         Name "SizeFooter"
+         Slot LayoutSlot "{65DCBA4500000048}" {
+          VerticalAlign 2
+          Padding 0 5 0 5
+         }
+         {
+          HorizontalLayoutWidgetClass "{664402C40BD63FEB}" {
+           Name "Footer"
+           Slot AlignableSlot "{65DCBA450000004A}" {
+            HorizontalAlign 3
+            Padding 5 0 5 0
+           }
+           {
+            HorizontalLayoutWidgetClass "{664402C40BD6309E}" {
+             Name "FooterLeft"
+             Slot LayoutSlot "{65DCBA450000004C}" {
+              HorizontalAlign 0
+              VerticalAlign 1
+              Padding 0 0 0 5
+              SizeMode Fill
+             }
+             {
+              ButtonWidgetClass "{664402C40BD63099}" : "{0EC7676429DDCBC6}UI/layouts/WidgetLibrary/Buttons/WLib_InputNavigationButton.layout" {
+               Name "CloseButton"
+               Slot LayoutSlot "{64F89C71410BFF29}" {
+                HorizontalAlign 0
+                VerticalAlign 1
+                Padding 20 0 0 0
+               }
+               components {
+                SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+                 m_sActionName "MenuBack"
+                 m_sLabel "Exit"
+                }
+               }
+              }
+             }
+            }
+            HorizontalLayoutWidgetClass "{664402C40BD6309A}" {
+             Name "FooterRight"
+             Slot LayoutSlot "{65F37D9178FDADD7}" {
+              Padding 0 0 5 5
+             }
+             {
+              ButtonWidgetClass "{664402C40BD7ED7F}" : "{0EC7676429DDCBC6}UI/layouts/WidgetLibrary/Buttons/WLib_InputNavigationButton.layout" {
+               Name "SpawnButton"
+               Slot LayoutSlot "{64F89C71410BFF29}" {
+                HorizontalAlign 1
+                VerticalAlign 2
+                Padding 20 0 0 0
+               }
+               components {
+                SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+                 m_sActionName "MenuSelectHold"
+                 m_sLabel "Remove From Garage"
+                }
+               }
+              }
+              ButtonWidgetClass "{664402C40BD7ED41}" : "{0EC7676429DDCBC6}UI/layouts/WidgetLibrary/Buttons/WLib_InputNavigationButton.layout" {
+               Name "DeleteButton"
+               Slot LayoutSlot "{64F89C71410BFF29}" {
+                HorizontalAlign 1
+                VerticalAlign 2
+                Padding 30 0 20 0
+               }
+               components {
+                SCR_InputButtonComponent "{5D346C3DD81D95CD}" {
+                 m_sActionName "MenuCalibrateMotionControl"
+                 m_sLabel "Delete"
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
